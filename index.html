@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha(){
+        document.write("<br>");
+    }
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+    var somaNotas1 = parseInt(prompt("Insira a soma das suas notas da primeira etapa: (Use o . para números decimais)"));
+    var somasNotas2 = parseInt(prompt("Insira a soma das suas notas da 2ª Etapa: (Use o . para números decimais)"));
+    var somasNotas3 = parseInt(prompt("Insira a soma das suas notas da 3ª Etapa: (Use o . para números decimais)"));
+    var resultado = (somaNotas1 + somasNotas2 + somasNotas3) / 3;
+    var media2 = (somaNotas1 + somasNotas2) / 2;
+    if(resultado && media2 >= 21) {
+        mostra("Parabéns! Você conseguiu a média.");
+    }
+    if(resultado && media2 < 21) {
+        mostra("Que pena! Você não conseguiu a média, mas ainda dá tempo!");
+    }
+    if(somasNotas3 == 0)
+        mostra("Sua média até agora é de: " + media2);
+</script>
