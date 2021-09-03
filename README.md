@@ -1,2 +1,2 @@
 # http://daniel-srj.github.io/index.html
-Apenas uma ferramenta pra ver se meu irmão passou de ano.
+Uma ferramenta que fiz pro meu irmão calcular a média final de suas notas.
